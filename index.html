@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damián Gonzalo Díaz | Desarrollador Backend Jr</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Animaciones personalizadas */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Header -->
+  <header class="p-6 fixed w-full bg-gray-800 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <!-- Logo -->
+        <img src="logo.png" alt="Logo" class="h-10 mr-4">
+        <h1 class="text-2xl font-bold">Damián Gonzalo Díaz</h1>
+      </div>
+      <nav>
+        <a href="#about" class="mx-2 hover:text-blue-400">Sobre mí</a>
+        <a href="#skills" class="mx-2 hover:text-blue-400">Habilidades</a>
+        <a href="#projects" class="mx-2 hover:text-blue-400">Proyectos</a>
+        <a href="#contact" class="mx-2 hover:text-blue-400">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Sobre mí -->
+  <section id="about" class="min-h-screen flex items-center justify-center fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">Sobre mí</h2>
+      <p class="mt-4 max-w-2xl mx-auto">
+        Soy Damián, un profesional apasionado por la tecnología, el desarrollo de inteligencia artificial y la innovación. A lo largo de mi carrera, he tenido la oportunidad de crear y liderar proyectos multidisciplinarios que combinan tecnología, ciencia de datos y conocimiento humano.
+      </p>
+      <div class="mt-6">
+        <a href="https://www.linkedin.com/in/damiangonzalodiaz/" class="mx-2 hover:text-blue-400">LinkedIn</a>
+        <a href="https://www.instagram.com/diazmegaa/?hl=es" class="mx-2 hover:text-blue-400">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Habilidades -->
+  <section id="skills" class="py-20 fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">Habilidades</h2>
+      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
+          <h3 class="text-xl font-bold">Python</h3>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
+          <h3 class="text-xl font-bold">Flask</h3>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
+          <h3 class="text-xl font-bold">Streamlit</h3>
+        </div>
+        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
+          <h3 class="text-xl font-bold">SQLite</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="projects" class="py-20 fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">Proyectos</h2>
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Proyecto Maia -->
+        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
+          <h3 class="text-2xl font-bold">Maia</h3>
+          <p class="mt-2">Asistente médica inteligente para detectar patologías.</p>
+          <a href="https://github.com/damianndiaz/maia" class="mt-4 inline-block text-blue-400 hover:underline">Ver en GitHub</a>
+        </div>
+        <!-- Proyecto Axo -->
+        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
+          <h3 class="text-2xl font-bold">Axo</h3>
+          <p class="mt-2">Asistente de entrenamiento físico y deportivo.</p>
+          <a href="https://github.com/damianndiaz/axo" class="mt-4 inline-block text-blue-400 hover:underline">Ver en GitHub</a>
+        </div>
+        <!-- Proyecto Argo -->
+        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
+          <h3 class="text-2xl font-bold">Argo</h3>
+          <p class="mt-2">Assistant para TDAH, TEA y obesidad.</p>
+          <a href="https://github.com/damianndiaz/argo" class="mt-4 inline-block text-blue-400 hover:underline">Ver en GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contact" class="py-20 fade-in">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold">Contacto</h2>
+      <p class="mt-4">¿Quieres trabajar conmigo? ¡Envíame un mensaje!</p>
+      <a href="mailto:diazzdamian00@gmail.com" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Enviar correo</a>
+    </div>
+  </section>
+</body>
+</html>
