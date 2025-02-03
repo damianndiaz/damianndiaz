@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Damián Gonzalo Díaz | Desarrollador Backend Jr</title>
+  <title>Damián Gonzalo Díaz</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     /* Animaciones personalizadas */
     @keyframes fadeIn {
@@ -20,6 +21,9 @@
     .hover-scale:hover {
       transform: scale(1.05);
     }
+    .bg-gradient {
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    }
   </style>
 </head>
 <body class="bg-gray-900 text-white">
@@ -27,29 +31,44 @@
   <header class="p-6 fixed w-full bg-gray-800 z-50">
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
-        <!-- Logo -->
-        <img src="logo.png" alt="Logo" class="h-10 mr-4">
-        <h1 class="text-2xl font-bold">Damián Gonzalo Díaz</h1>
+        <!-- Logo con emoji -->
+        <span class="text-4xl mr-4">👾</span>
+        <h1 class="text-2xl font-bold">Damián Gonzalo Díaz | Desarrollador Backend Jr</h1>
       </div>
       <nav>
-        <a href="#about" class="mx-2 hover:text-blue-400">Sobre mí</a>
-        <a href="#skills" class="mx-2 hover:text-blue-400">Habilidades</a>
         <a href="#projects" class="mx-2 hover:text-blue-400">Proyectos</a>
-        <a href="#contact" class="mx-2 hover:text-blue-400">Contacto</a>
+        <a href="#skills" class="mx-2 hover:text-blue-400">Habilidades</a>
+        <a href="#about" class="mx-2 hover:text-blue-400">Sobre mí</a>
       </nav>
     </div>
   </header>
 
-  <!-- Sección Sobre mí -->
-  <section id="about" class="min-h-screen flex items-center justify-center fade-in">
+  <!-- Sección Proyectos -->
+  <section id="projects" class="min-h-screen flex items-center justify-center bg-gradient fade-in">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold">Sobre mí</h2>
-      <p class="mt-4 max-w-2xl mx-auto">
-        Soy Damián, un profesional apasionado por la tecnología, el desarrollo de inteligencia artificial y la innovación. A lo largo de mi carrera, he tenido la oportunidad de crear y liderar proyectos multidisciplinarios que combinan tecnología, ciencia de datos y conocimiento humano.
-      </p>
-      <div class="mt-6">
-        <a href="https://www.linkedin.com/in/damiangonzalodiaz/" class="mx-2 hover:text-blue-400">LinkedIn</a>
-        <a href="https://www.instagram.com/diazmegaa/?hl=es" class="mx-2 hover:text-blue-400">Instagram</a>
+      <h2 class="text-4xl font-bold mb-12">Mis Proyectos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Proyecto Maia -->
+        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
+          <span class="text-6xl mb-4">👩🏼‍⚕️</span>
+          <h3 class="text-2xl font-bold">Maia</h3>
+          <p class="mt-2">Asistente médica inteligente para detectar patologías.</p>
+          <a href="https://maia-vaovao.streamlit.app/" class="mt-4 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Ver app</a>
+        </div>
+        <!-- Proyecto Axo -->
+        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
+          <span class="text-6xl mb-4">🤖</span>
+          <h3 class="text-2xl font-bold">Axo</h3>
+          <p class="mt-2">Asistente de entrenamiento físico y deportivo.</p>
+          <a href="https://axo-ai.streamlit.app/" class="mt-4 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Ver app</a>
+        </div>
+        <!-- Proyecto Argo -->
+        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
+          <span class="text-6xl mb-4">🧠</span>
+          <h3 class="text-2xl font-bold">Argo</h3>
+          <p class="mt-2">Assistant para TDAH, TEA y obesidad.</p>
+          <a href="https://argo-cem.streamlit.app/" class="mt-4 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Ver app</a>
+        </div>
       </div>
     </div>
   </section>
@@ -57,57 +76,69 @@
   <!-- Sección Habilidades -->
   <section id="skills" class="py-20 fade-in">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold">Habilidades</h2>
-      <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
+      <h2 class="text-4xl font-bold mb-12">Habilidades</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Python -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fab fa-python text-6xl mb-4"></i>
           <h3 class="text-xl font-bold">Python</h3>
         </div>
-        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
+        <!-- Flask -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fas fa-flask text-6xl mb-4"></i>
           <h3 class="text-xl font-bold">Flask</h3>
         </div>
-        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
-          <h3 class="text-xl font-bold">Streamlit</h3>
+        <!-- HTML -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fab fa-html5 text-6xl mb-4"></i>
+          <h3 class="text-xl font-bold">HTML</h3>
         </div>
-        <div class="p-4 bg-gray-800 rounded-lg hover-scale">
+        <!-- OpenAI -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fas fa-brain text-6xl mb-4"></i>
+          <h3 class="text-xl font-bold">OpenAI</h3>
+        </div>
+        <!-- Node.js -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fab fa-node-js text-6xl mb-4"></i>
+          <h3 class="text-xl font-bold">Node.js</h3>
+        </div>
+        <!-- JavaScript -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fab fa-js-square text-6xl mb-4"></i>
+          <h3 class="text-xl font-bold">JavaScript</h3>
+        </div>
+        <!-- SQLite -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fas fa-database text-6xl mb-4"></i>
           <h3 class="text-xl font-bold">SQLite</h3>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Proyectos -->
-  <section id="projects" class="py-20 fade-in">
-    <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold">Proyectos</h2>
-      <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Proyecto Maia -->
-        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
-          <h3 class="text-2xl font-bold">Maia</h3>
-          <p class="mt-2">Asistente médica inteligente para detectar patologías.</p>
-          <a href="https://github.com/damianndiaz/maia" class="mt-4 inline-block text-blue-400 hover:underline">Ver en GitHub</a>
-        </div>
-        <!-- Proyecto Axo -->
-        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
-          <h3 class="text-2xl font-bold">Axo</h3>
-          <p class="mt-2">Asistente de entrenamiento físico y deportivo.</p>
-          <a href="https://github.com/damianndiaz/axo" class="mt-4 inline-block text-blue-400 hover:underline">Ver en GitHub</a>
-        </div>
-        <!-- Proyecto Argo -->
-        <div class="p-6 bg-gray-800 rounded-lg hover-scale">
-          <h3 class="text-2xl font-bold">Argo</h3>
-          <p class="mt-2">Assistant para TDAH, TEA y obesidad.</p>
-          <a href="https://github.com/damianndiaz/argo" class="mt-4 inline-block text-blue-400 hover:underline">Ver en GitHub</a>
+        <!-- Digital Ocean -->
+        <div class="p-6 bg-gray-800 rounded-lg">
+          <i class="fab fa-aws text-6xl mb-4"></i>
+          <h3 class="text-xl font-bold">Digital Ocean</h3>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección Contacto -->
-  <section id="contact" class="py-20 fade-in">
+  <!-- Sección Sobre mí -->
+  <section id="about" class="py-20 fade-in">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold">Contacto</h2>
-      <p class="mt-4">¿Quieres trabajar conmigo? ¡Envíame un mensaje!</p>
-      <a href="mailto:diazzdamian00@gmail.com" class="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Enviar correo</a>
+      <h2 class="text-4xl font-bold mb-8">Sobre mí</h2>
+      <p class="mt-4 max-w-2xl mx-auto">
+        Soy Damián, un profesional apasionado por la tecnología, el desarrollo de inteligencia artificial y la innovación. Si quieres un assistant 100% personalizado, ¡contáctame para presupuestar tu proyecto!
+      </p>
+      <div class="mt-8 flex justify-center space-x-6">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/damiangonzalodiaz/" class="text-3xl hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/diazmegaa/?hl=es" class="text-3xl hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/541132662924" class="text-3xl hover:text-blue-400"><i class="fab fa-whatsapp"></i></a>
+        <!-- Gmail -->
+        <a href="mailto:diazzdamian00@gmail.com" class="text-3xl hover:text-blue-400"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
   </section>
 </body>
